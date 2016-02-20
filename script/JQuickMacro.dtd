@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT ExitTime ( #PCDATA ) >
+
+<!ELEMENT ScreenCapture ( #PCDATA ) >
+<!ATTLIST ScreenCapture height CDATA #REQUIRED >
+<!ATTLIST ScreenCapture width CDATA #REQUIRED >
+<!ATTLIST ScreenCapture x CDATA #REQUIRED >
+<!ATTLIST ScreenCapture y CDATA #REQUIRED >
+
+<!ELEMENT Thread ( event+ ) >
+<!ATTLIST Thread autodelay CDATA #REQUIRED >
+<!ATTLIST Thread name CDATA #REQUIRED >
+<!ATTLIST Thread repeatedly CDATA #REQUIRED >
+
+<!ELEMENT Threads ( singleCheck, Thread+, ExitTime ) >
+<!ATTLIST Threads eventDelay CDATA #REQUIRED >
+<!ATTLIST Threads singleWindow CDATA #REQUIRED >
+<!ATTLIST Threads startWait CDATA #REQUIRED >
+
+<!ELEMENT event ( #PCDATA ) >
+<!ATTLIST event name ( delay | keyClick | keyPress | keyRelease | mouseClick | mouseMove | mousePress | mouseRelease | mouseWheel ) #REQUIRED >
+
+<!ELEMENT singleCheck ( ScreenCapture+ ) >

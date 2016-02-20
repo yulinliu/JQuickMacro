@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+JQuickMacro-Version: 1.0
+Main-Class: org.quickmacro.script.RunScript
+Class-Path: log4j-1.2.15.jar
+

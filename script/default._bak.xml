@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Threads SYSTEM ".\JQuickMacro.dtd">
+<Threads singleWindow="false" eventDelay="200" startWait="3000">
+	<singleCheck>
+		<ScreenCapture height="7" width="7" x="7" y="7">.\screen\1264132737731.png</ScreenCapture>
+	</singleCheck>
+	<Thread autodelay="10 * 60 * 1000" name="鎖定砥礪獅" repeatedly="true">
+		<event name="mouseMove">50% , 50%</event>
+		<event name="keyClick">VK_ESCAPE</event>
+		<event name="mouseClick">BUTTON1_MASK</event>
+		<event name="delay">500</event>
+	</Thread>
+	<Thread autodelay="7500" name="金錢鏢" repeatedly="true">
+		<event name="keyClick">VK_F2</event>
+		<event name="delay">1000</event>
+	</Thread>
+	<Thread autodelay="2 * 60 * 1000" name="絕招蠱" repeatedly="true">
+		<event name="keyClick">VK_F3</event>
+		<event name="delay">1000</event>
+	</Thread>
+	<ExitTime>-1</ExitTime>
+</Threads>

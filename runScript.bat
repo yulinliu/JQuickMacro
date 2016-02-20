@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -cp .;lib/JQuickMacro.jar org.quickmacro.script.RunScript
